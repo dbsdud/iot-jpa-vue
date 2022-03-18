@@ -11,8 +11,8 @@ spring:
 
   jpa:
     hibernate:
-      # ddl-auto: update # ?? ??? ??
-      ddl-auto: create-drop # ?? ??? ?? ? ?? ??
+      # ddl-auto: update # 변경 사항만 수정
+      ddl-auto: create-drop # 기존 테이블 삭제 후 새로 생성
     show-sql: true
     properties:
       hibernate.enable_lazy_load_no_trans: true
