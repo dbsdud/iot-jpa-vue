@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:iot-jpa-vue   # For Test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    sql-script-encoding: UTF-8
+
+  jpa:
+    hibernate:
+      # ddl-auto: update # ?? ??? ??
+      ddl-auto: create-drop # ?? ??? ?? ? ?? ??
+    show-sql: true
+    properties:
+      hibernate.enable_lazy_load_no_trans: true
+      hibernate.format_sql: true
